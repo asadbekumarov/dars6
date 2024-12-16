@@ -3,8 +3,8 @@ import React from "react";
 function Skleton({}) {
   const loading = new Array(10).fill("");
 
-  let loadingItem = loading.map((item) => (
-    <div className="max-w-[274px] w-full p-3 bg-white rounded-2xl">
+  let loadingItem = loading.map((item, index) => (
+    <div key={index} className="max-w-[274px] w-full p-3 bg-white rounded-2xl">
       <div className="max-w-[274px] w-full h-[200px]  bg-[#eeedef] rounded-2xl p-4"></div>
       <div className="py-2 flex flex-col gap-1">
         <div className="h-[27px] w-[200px] bg-[#eeedef] rounded-2xl"></div>
